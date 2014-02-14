@@ -3,7 +3,6 @@ class CreateBankUserAssociations < ActiveRecord::Migration
     create_table :bank_user_associations do |t|
       t.string :user_id
       t.string :bank_id
-      t.float :account_money
  
       t.timestamps
     end
