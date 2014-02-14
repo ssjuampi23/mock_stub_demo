@@ -8,6 +8,7 @@
       <tr>
         <th>Name</th>
         <th>Last Name</th>
+        <th>Account Money</th>
       </tr>
     </thead>
 
@@ -16,6 +17,7 @@
         <tr>
           <td><%= user.name %></td>
           <td><%= user.last_name %></td>
+          <td><%= user.account_money %></td>
           <td><%= link_to 'Show', user, class: 'btn btn-link' %></td>
           <td><%= link_to 'Edit', edit_user_path(user), class: 'btn btn-link' %></td>
           <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-link' %></td>
