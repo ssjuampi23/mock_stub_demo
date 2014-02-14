@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20140201134441) do
   create_table "bank_user_associations", force: true do |t|
     t.string   "user_id"
     t.string   "bank_id"
-    t.float    "account_money"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140201134441) do
   create_table "users", force: true do |t|
     t.string "name"
     t.string "last_name"
+    t.float  "account_money"
   end
 
 end
