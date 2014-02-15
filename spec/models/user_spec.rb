@@ -49,6 +49,10 @@ describe User do
       allow(@bank).to receive(:title) { "The Greatest Bank" }
       expect(@bank.title).to eq "The Greatest Bank"
     end
+    
+    it "should have a stubbed name for the bank" do
+      expect(@bank.name).to eq "Mock Bank"
+    end
   end
 
 end
