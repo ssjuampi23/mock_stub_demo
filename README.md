@@ -26,6 +26,12 @@ Factory.build_stubbed
 It works similar to the build method but it does not persist the model. It stubs out a handful 
 of methods that interact with the database and raises if you call them. For example:
 
+Using Mock from the console
+===========================
+
+You just need to include: require "rspec/mocks/standalone" from the console or enter into the console using
+the rails test env as follows: RAILS_ENV=test rails console.
+
 SQLite methods
 ==============
 
@@ -45,3 +51,4 @@ References
 * http://blog.spoolz.com/2012/07/09/small-revelation-factorygirl-build_stubbed-associations-and-let/
 * https://www.relishapp.com/rspec/rspec-core/v/2-6/docs/helper-methods/let-and-let
 * http://blog.12spokes.com/web-design-development/how-factorygirl-can-slow-down-your-test-suite-aka-factory-build-vs-blank-activerecord-objects/
+* https://www.relishapp.com/rspec/rspec-mocks/v/2-11/docs/outside-rspec/standalone
