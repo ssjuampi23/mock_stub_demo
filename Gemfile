@@ -42,7 +42,7 @@ end
 
 group :test do
   gem "faker", "~> 1.2.0" #used to create dummy users for testing
-  gem 'capybara', '~> 2.1.0'
+  gem 'capybara', '~> 2.2.1'
   gem 'database_cleaner', '0.9.1'
 end
 

@@ -23,6 +23,11 @@ RSpec.configure do |config|
   # config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
+  
+  # This prevents the deprecation messages from showing when running the tests
+  config.mock_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
 
   # Include Factory Girl syntax to simplify calls to factories
   config.include FactoryGirl::Syntax::Methods

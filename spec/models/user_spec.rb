@@ -45,6 +45,11 @@ describe User do
       expect(@user.email).to eq "test@email.com"
     end
     
+    it "should allow to stub a method for the User model" do
+      allow(User).to receive(:height) { "1.72 cm" }
+      expect(User.height).to eq "1.72 cm"
+    end
+    
     it "should allow a name for the bank" do
       allow(@bank).to receive(:title) { "The Greatest Bank" }
       expect(@bank.title).to eq "The Greatest Bank"
