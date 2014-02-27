@@ -9,6 +9,9 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Use twitter bootstrap library for easy styling of the application
+gem 'bootstrap-sass', '~> 3.0.3.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -30,6 +33,17 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem "factory_girl_rails", "~> 4.0"
+end
+
+group :test do
+  gem "faker", "~> 1.2.0" #used to create dummy users for testing
+  gem 'capybara', '~> 2.2.1'
+  gem 'database_cleaner', '0.9.1'
 end
 
 # Use ActiveModel has_secure_password

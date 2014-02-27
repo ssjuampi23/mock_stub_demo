@@ -1,0 +1,22 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h5><%= @bank.name %> Details</h5></div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @bank.name %></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <%= link_to 'Edit', edit_bank_path(@bank),:class => "btn btn-link" %> |
+  <%= link_to 'Back', banks_path,:class => "btn btn-link" %>
+</div>

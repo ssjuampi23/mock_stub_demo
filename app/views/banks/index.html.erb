@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h5>Listing Banks</h5>
+    <%= link_to 'New Bank', new_bank_path, class: 'btn btn-primary btn-sm pull-right', role: 'button' %>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @banks.each do |bank| %>
+        <tr>
+          <td><%= bank.name %></td>
+          <td><%= link_to 'Show', bank, class: 'btn btn-link' %></td>
+          <td><%= link_to 'Edit', edit_bank_path(bank), class: 'btn btn-link' %></td>
+          <td><%= link_to 'Destroy', bank, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-link' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
