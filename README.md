@@ -8,6 +8,21 @@ Introduction
 Rspec-mocks is a test-double framework for rspec with support for method stubs, fakes,
 and message expectations on generated test-doubles and real objects alike.
 
+Mock
+----
+
+It is some object that represents a real object,for testing purposes.These are also known as test doubles. 
+A mock doesn’t touch the database–and thus takes less time to set up in a test. Build_stubbed will never hit the database, 
+although it will create the associations if the factory has some.
+
+Stub
+----
+
+This overrides a method call on a given object and returns a predetermined value for it. In other words, a stub is a fake method which, 
+when called upon, will return a real result for use in our tests. You’ll commonly use this to override the default functionality 
+for a method, particularly in database or network-intensive activity. In other words, a method stub is an instruction to an object 
+(real or test double) to return a known value in response to a message.
+
 Factory Girl Methods
 --------------------
 
